@@ -1,0 +1,27 @@
+yum install unzip -y
+
+cd /www/server/panel/class
+
+wget https://raw.githubusercontent.com/baicer/bt.cn/master/bt_crack.zip
+
+unzip -O bt_crack.zip
+
+rm -f bt_crack.zip
+
+wget -O update.sh http://download.bt.cn/install/update_pro.sh && bash update.sh pro
+
+wget https://raw.githubusercontent.com/baicer/bt.cn/master/bt.zip
+
+unzip -o bt.zip
+
+rm -f bt.zip
+
+echo -e "B&T网络安全团队提示您：安装完成! 请等待服务器重启后连接宝塔检测是否安装完成 如有疑问，请前往blog.btsafety.cn进行留言，我们会第一时间回复您！"
+
+rm -f install
+
+reboot
+
+fi   
+
+exit 0;
